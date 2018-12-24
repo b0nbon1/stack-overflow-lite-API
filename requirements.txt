@@ -1,8 +1,8 @@
-apturl==0.5.2
 asn1crypto==0.24.0
 astroid==2.1.0
 atomicwrites==1.2.1
 attrs==18.2.0
+autoenv==1.0.0
 autopep8==1.4.3
 Brlapi==0.6.6
 certifi==2018.1.18
