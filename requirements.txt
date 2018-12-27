@@ -4,7 +4,6 @@ atomicwrites==1.2.1
 attrs==18.2.0
 autoenv==1.0.0
 autopep8==1.4.3
-Brlapi==0.6.6
 certifi==2018.1.18
 chardet==3.0.4
 Click==7.0
