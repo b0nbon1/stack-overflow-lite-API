@@ -8,16 +8,16 @@ This is an api that enables stack overflow functionality
 
 ## Here is a list of the functioning endpoints
 
-| EndPoint                  | Functionality                    |
-| :---                      |     :---:                        |   
-| POST /auth/signup             | register users       |  
-| POST /auth/login | login user   |  
-| GET /questions                | Fetch all questions           |  
-| GET /questions/<questionId>      | Fetch a specific question       |  
-| POST /questions            | Post a question                 | 
-| Delete /questions/<questionId>               | Delete a question              | 
-| POST /questions/<questionId>/answers              | Post an answer to a question             |  
-| PUT /questions/<questionId>/answers/<answerId>               | Mark an answer as accepted or update an answer.             |  
+| EndPoint                              | Functionality                    |
+| :---                                  |     :---:                        |   
+| POST /auth/signup                     | register users       |  
+| POST /auth/login | login user         |  
+| GET /questions                        | Fetch all questions           |  
+| GET /questions/<questionId>           | Fetch a specific question       |  
+| POST /questions                       | Post a question                 | 
+| Delete /questions/< questionId >               | Delete a question              | 
+| POST /questions/< questionId >/answers              | Post an answer to a question             |  
+| PUT /questions/< questionId >/answers/< answerId >               | Mark an answer as accepted or update an answer.|  
   
 ## Extra endpoints include 
 * comments to add
