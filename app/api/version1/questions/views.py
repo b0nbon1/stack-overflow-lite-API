@@ -57,5 +57,4 @@ def update_question(question_id):
     question[0]["author"] = request.json.get("author", question[0]["title"])
     question[0]["description"] = request.json.get("description", question[0]["description"])
     question[0]["tag"] = request.json.get("tag", question[0]["tag"])
-    return jsonify(question)
-    return make_response(jsonify({"message": "question successful updated"}))
+    return make_response(jsonify(question, {"message": "question successful updated"}))
