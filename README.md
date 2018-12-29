@@ -1,4 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # stack-overflow-lite-API
+
 This is an api that enables stack overflow functionality
 ## The following are API endpoints enabling one to: 
 - Get all questions.
@@ -13,7 +16,7 @@ This is an api that enables stack overflow functionality
 | POST /auth/signup                     | register users       |  
 | POST /auth/login | login user         |  
 | GET /questions                        | Fetch all questions           |  
-| GET /questions/<questionId>           | Fetch a specific question       |  
+| GET /questions/< questionId >           | Fetch a specific question       |  
 | POST /questions                       | Post a question                 | 
 | Delete /questions/< questionId >               | Delete a question              | 
 | POST /questions/< questionId >/answers              | Post an answer to a question             |  
