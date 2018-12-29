@@ -42,6 +42,7 @@ def delete_question(question_id):
             if (question_id) == question["id"]:
                 questions.remove(question)
                 return make_response(jsonify({"message": "question deleted successful"})), 200
+                return jsonify(questions)
         return make_response(jsonify({"Message": "no question"})), 404
     return make_response(jsonify({"Message": "Invalid question id"})), 404
 
