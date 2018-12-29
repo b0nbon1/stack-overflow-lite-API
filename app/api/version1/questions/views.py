@@ -33,7 +33,7 @@ def ask_question():
     ask = Questions().ask_question(author, title, description, tag)    
     return make_response(jsonify(ask)), 200
 
-    @quest.route('/<string:question_id>', methods=['DELETE'])
+@quest.route('/<string:question_id>', methods=['DELETE'])
 def delete_question(question_id):
 
     # question = [question for question in questions if question['id'] == question_id]
