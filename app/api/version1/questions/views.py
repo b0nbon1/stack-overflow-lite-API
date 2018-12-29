@@ -18,3 +18,17 @@ def get_question(question_id):
     if len(question) == 0:
         abort(404)
     return make_response(jsonify(question)), 200
+
+@quest.route('/new_question', methods=['POST'])
+def ask_question():
+    data = request.get_json()
+    if not data:
+        abort(400)
+
+    title = data["title"]
+    description = data["description"]
+    tag = data["tag"]
+    author = data["author"]
+
+    ask = Questions().ask_question(author, title, description, tag)    
+    return make_response(jsonify(ask)), 200
