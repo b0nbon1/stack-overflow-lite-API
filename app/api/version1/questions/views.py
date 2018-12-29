@@ -41,7 +41,7 @@ def delete_question(question_id):
         for question in questions:
             if (question_id) == question["id"]:
                 questions.remove(question)
-                return make_response(jsonify(questions)), 200
+                return make_response(jsonify({"message": "question deleted successful"})), 200
         return make_response(jsonify({"Message": "no question"})), 404
     return make_response(jsonify({"Message": "Invalid question id"})), 404
 
@@ -57,3 +57,4 @@ def update_question(question_id):
     question[0]["description"] = request.json.get("description", question[0]["description"])
     question[0]["tag"] = request.json.get("tag", question[0]["tag"])
     return jsonify(question)
+    return make_response(jsonify({"message": "question successful updated"}))
