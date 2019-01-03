@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![Build Status](https://travis-ci.org/b0nbon1/stack-overflow-lite-API.svg?branch=develop)](https://travis-ci.org/b0nbon1/stack-overflow-lite-API)
 
 # stack-overflow-lite-API
 
