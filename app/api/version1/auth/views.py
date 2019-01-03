@@ -6,6 +6,7 @@ from app.api.version1.users.utils import validators
 
 auth = Blueprint('auth', __name__, url_prefix='/auth')
 
+
 @auth.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
@@ -27,7 +28,7 @@ def register():
 
     check_email = validator.validate_email()
 
-    if check_username is False:
+    if check_email is False:
         return make_response(jsonify({"message": "invalid email"})), 400
 
     check_password = validator.validate_password()
@@ -40,7 +41,8 @@ def register():
         password = generate_password_hash(password)
         new_user = User(username, email, password)
         add_user = new_user.register_user()
-        return make_response(jsonify((add_user),{"message":"successful registered"})),200
+
+        return make_response(jsonify({"message": "user successfull registered!"})), 200
     else:
         return make_response(
             jsonify({"message": "Passwords don't match"})), 400
