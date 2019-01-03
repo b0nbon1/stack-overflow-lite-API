@@ -5,11 +5,10 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - pip install coveralls
-  - pip install codeclimate-test-reporter
+  - pip install pytest
   
 script:
-  - pytest --cov=./app
+  - pytest
 
 branches:
   only:
