@@ -14,6 +14,12 @@ Users = [
         "username": "bon",
         "email": "flasky@gmail.com",
         "password": generate_password_hash("passpass")
+    },
+    {
+        "id": 3,
+        "username": "test",
+        "email":"test@test.com",
+        "password": generate_password_hash("testpytest")
     }
 ]
 
@@ -48,4 +54,3 @@ class User():
                 Users.remove(user)
                 return Users
             return jsonify({'message': 'user not found'}), 404
-
