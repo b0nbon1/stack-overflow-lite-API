@@ -46,5 +46,5 @@ This is an api that enables stack overflow functionality
 * Flask framework 
 
 # Written by: Bonvic Bundi
-#### Copyright © Andela 2018 
+#### Copyright © Bonbon1 2018 
 
