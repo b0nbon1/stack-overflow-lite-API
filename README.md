@@ -2,7 +2,7 @@
 
 # stack-overflow-lite-API
 
-This is an api that enables stack overflow functionality
+This is an api that enables stack overflow functionality without databases, DS only
 ## The following are API endpoints enabling one to: 
 - Get all questions.
 - Get a question.
